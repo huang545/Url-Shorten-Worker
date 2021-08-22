@@ -17,7 +17,7 @@ let res
   .then(function(myJson) {
     res = myJson;
     document.getElementById("searchbtn").disabled=false;
-	document.getElementById("searchbtn").innerHTML=' 缩短网址';
+	document.getElementById("searchbtn").innerHTML=' Shorten it';
     if(res.key!=="")
     document.getElementById("状态信息").innerHTML=window.location.host+res.key;
     $('#exampleModal').modal('show')
